@@ -1,0 +1,33 @@
+/* pages/daylist/daylist.wxss */
+    @import "../index/index.wxss";
+
+    .datData{
+      background-color: white;
+      height: 100rpx;
+      width: 100%;
+      margin-bottom:20rpx; 
+    }
+    .weui-input{
+      text-align: center;
+      padding-top: 45rpx;
+    }
+.topTabbar{
+  background-color: #7c7c7c;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.topTabbar view{
+  color: #ff3044;
+  align-self:center;
+  flex: 1;
+  text-align: center;
+}
+.dat-list{
+  height: 30rpx;
+  width: 100%;
+}
+.active{
+color:red;
+border-bottom: 4rpx solid red;
+}

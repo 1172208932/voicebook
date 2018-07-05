@@ -1,0 +1,63 @@
+/* pages/upPage/upPage.wxss */
+.up-top{
+  position: relative;
+  width: 100%;
+  height: 150rpx;
+}
+.up-top-left{
+  line-height: 150rpx;  
+  position: absolute;
+  left: 20rpx;
+}
+.up-top-right{
+  line-height: 150rpx;
+  position: absolute;
+  right: 20rpx;
+  color: #ff4033;
+}
+.up-first{
+  margin: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #7c7c7c;  
+}
+.up-first image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.up-time{
+  margin-left: 20rpx;
+}
+
+/*上传图片  */
+.img-box{
+  display: flex;
+  flex-direction: row;
+}
+.up-image-box{
+  border: 2rpx solid #7c7c7c;
+  width: 200rpx;
+  height: 200rpx
+}
+.up-image-box image{
+  width: 200rpx;
+  height: 200rpx
+}
+
+/*按钮  */
+
+.up-buttom button{
+
+  margin-bottom:20rpx; 
+  width: 90%;
+}
+.up-buttom button:first-child{
+    margin-top: 500rpx;
+  background-color: #ff4033;
+  color: white;
+}
+.up-buttom button:last-child{
+  background-color: white;
+  border: 2rpx solid #ff4033;
+  color: #ff4033;
+}

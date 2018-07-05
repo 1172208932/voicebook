@@ -1,0 +1,19 @@
+{
+  "pages": [
+   
+    
+    "pages/index/index",
+    "pages/firstout/firstout",
+        "pages/textPage/textPage",
+    "pages/upPage/upPage",
+    "pages/daylist/daylist",
+    "pages/addCgi/addCgi"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF4033",
+    "navigationBarTitleText": "语音小账本",
+    "navigationBarTextStyle": "white"
+  }
+}
