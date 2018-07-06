@@ -49,21 +49,21 @@ page {
 }
 
 .row-1 {
-  /* width: 305rpx; */
+   width: 305rpx; 
   height: 30rpx;
   background-color: #3edd24;
   border-radius: 20rpx;
 }
 
 .row-2 {
-  /* width: 380rpx; */
+   width: 380rpx; 
   height: 30rpx;
   background-color: #dd2446;
   border-radius: 20rpx;
 }
 
 .row-3 {
-  /* width: 95rpx; */
+   width: 95rpx; 
   height: 30rpx;
   background-color: #ddc124;
   border-radius: 20rpx;

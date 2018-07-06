@@ -1,12 +1,14 @@
 {
   "pages": [
-   
-    
     "pages/index/index",
-    "pages/firstout/firstout",
-        "pages/textPage/textPage",
+    
     "pages/upPage/upPage",
-    "pages/daylist/daylist",
+    
+        "pages/daylist/daylist",
+    "pages/firstout/firstout",
+
+    
+        "pages/textPage/textPage",
     "pages/addCgi/addCgi"
   ],
   "window": {

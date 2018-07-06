@@ -24,10 +24,10 @@
 <view>消费总金额</view>
 </view>
 <view class='listAllConter'>
-<view>5笔</view>
+<view><text>5</text>笔</view>
 <view>支出</view>
 </view>
-<view bindtap='toDay' class='listAllRight'>查看详细</view>
+<view bindtap='toDay' class='listAllRight'>查看详情</view>
 </view>
 </view>
 

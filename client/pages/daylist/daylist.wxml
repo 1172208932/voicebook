@@ -1,7 +1,7 @@
 <!--pages/daylist/daylist.wxml-->
 <view class='datData'>
   <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-    <view class="weui-input">{{date}}</view>
+    <view class="weui-input">{{date}}<view class='arrow_down '></view></view>
   </picker>
 </view>
 <view class='top'>
@@ -37,7 +37,7 @@
 
 
 <view wx:if="{{currentTab==0}}" class='dat-list'>
-<view bindtap='toUppage'>
-<text>支出</text><text>$190.00</text><text>买菜花了</text>
+<view class='list_1' bindtap='toUppage'>
+<view>支出</view><view>$190.00</view><view class='list_view'>买菜花买菜花了买菜花了买菜花了了</view>
 </view>
 </view>
