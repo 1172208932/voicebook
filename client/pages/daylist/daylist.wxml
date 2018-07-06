@@ -8,22 +8,22 @@
   <view class='topBox'>
     <view class='topLittleBOX-1'>本月收入</view>
     <view class='topLittleBOX-2'>
-      <view class='row-1'></view>
-      <view class='rowText'>1000.00</view>
+      <view class='row-1' style='width:{{row1}}rpx'></view>
+      <view class='rowText'>{{inmoney}}</view>
     </view>
   </view>
   <view class='topBox'>
     <view class='topLittleBOX-1'>本月支出</view>
     <view class='topLittleBOX-2'>
-      <view class='row-2'></view>
-      <view class='rowText'>1200.00</view>
+      <view class='row-2' style='width:{{row2}}rpx'></view>
+      <view class='rowText'>{{cost}}</view>
     </view>
   </view>
   <view class='topBox'>
     <view class='topLittleBOX-1'>本月结余</view>
     <view class='topLittleBOX-2'>
-      <view class='row-3'></view>
-      <view class='rowText'>-200.00</view>
+      <view class='row-3' style='width:{{row3}}rpx'></view>
+      <view class='rowText'>{{little}}</view>
     </view>
   </view>
 </view>

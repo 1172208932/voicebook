@@ -1,5 +1,5 @@
 /* pages/firstout/firstout.wxss */
-
+@import "../index/index.wxss";
 page {
   background: #f6f6f6;
   height: 100%;
@@ -133,52 +133,4 @@ page {
 
 /*listbox end  */
 
-/* tabbar start */
 
-.tabbar {
-  display: flex;
-  flex-direction: row;
-}
-
-.tabbarBox {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.tabbarBox-2 {
-  flex: 1;
-  text-align: center;
-}
-
-.tabbarBox-2 image {
-  position: absolute;
-  bottom: 42rpx;
-  margin-top: 2rpx;
-  margin-left: -55rpx;
-  width: 115rpx;
-  height: 115rpx;
-}
-
-.tabbarBox-2 view {
-  position: absolute;
-  bottom: 0;
-  font-size: 26rpx;
-  color: #7c7c7c;
-  padding-left: 74rpx;
-}
-
-.tabbarBox image {
-  padding-top: 2rpx;
-  padding-left: 95rpx;
-  width: 60rpx;
-  height: 60rpx;
-}
-
-.tabbarBox view {
-  font-size: 26rpx;
-  color: #7c7c7c;
-}
-
-/* tabbar end */

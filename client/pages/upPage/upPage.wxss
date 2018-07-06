@@ -58,14 +58,15 @@
 }
 
 .up-image-box {
+  margin-left: 20rpx;
   border: 2rpx solid #7c7c7c;
-  width: 200rpx;
-  height: 200rpx;
+  width: 180rpx;
+  height: 180rpx;
 }
 
 .up-image-box image {
-  width: 200rpx;
-  height: 200rpx;
+  width: 180rpx;
+  height: 180rpx;
 }
 
 /*按钮  */

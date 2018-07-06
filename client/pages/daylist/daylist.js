@@ -5,6 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    inmoney: 400.00,
+    cost: 1000.00,
+    little: -200.00,
+    row1: "",
+    row2: "",
+    row3: "",
     currentTab: 0,
     date:"2018-6-28"
   },
@@ -35,8 +41,22 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function () {
+    var list5 = [this.data.inmoney, this.data.cost, this.data.little];
+    var index5 = list5.indexOf(Math.max.apply(null, list5));
+    var max = Math.max.apply(null, list5);
+    console.log(list5)
+    console.log(max)
+    console.log(index5)
+    var unit = 380 / max;
+    console.log(unit)
+
+    this.setData({
+      row1: list5[0] * unit,
+      row2: list5[1] * unit,
+      row3: list5[2] * unit,
+    })
+
   },
 
   /**

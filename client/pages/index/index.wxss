@@ -1,4 +1,10 @@
 /**index.wxss**/
+.show{
+  display: none
+}
+.hide{
+  display: block
+}
 
 page {
   background: #f6f6f6;
@@ -184,7 +190,7 @@ align-self:center;
   position: absolute;
   bottom: 42rpx;
   margin-top: 2rpx;
-  margin-left: -55rpx;
+  margin-left: 70rpx;
   width: 115rpx;
   height: 115rpx;
 }

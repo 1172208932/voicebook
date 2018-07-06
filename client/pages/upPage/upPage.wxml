@@ -37,6 +37,12 @@
   <view bindtap='chooseimage' class='up-image-box'>
     <image src='{{tempFilePaths}}' mode="aspecFill" />
   </view>
+  <view bindtap='chooseimage1' class='up-image-box'>
+    <image src='{{tempFilePaths1}}' mode="aspecFill" />
+  </view>
+  <view bindtap='chooseimage2' class='up-image-box'>
+    <image src='{{tempFilePaths2}}' mode="aspecFill" />
+  </view>
 </view>
 
 

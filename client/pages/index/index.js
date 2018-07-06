@@ -5,14 +5,13 @@ var util = require('../../utils/util.js')
 
 Page({
   data: {
-    inmoney: 1000.00,
-    cost: 1200.00,
+    showView:true,
+    inmoney: 400.00,
+    cost: 1000.00,
     little: -200.00,
     row1: "",
-    row2: 380,
-    row3: 95,
-    begin: true,
-    end: false,
+    row2: "",
+    row3: "",
     userInfo: {},
     logged: false,
     takeSession: false,
@@ -28,8 +27,7 @@ Page({
   },
   voicebegin: function() {
     this.setData({
-      begin: false,
-      end: true
+      showView: false,      
     })
     var s = this;
     console.log("start");
@@ -57,8 +55,7 @@ Page({
 
   voiceend: function() { //结束录音 
     this.setData({
-      begin: true,
-      end: false
+      showView: true,      
     })
     var s = this;
     console.log("end");
@@ -68,7 +65,7 @@ Page({
     });
     wx.showToast();
     setTimeout(function() {
-      // var urls = app.globalData.urls + "/Web/UpVoice";
+      var urls = "/Web/UpVoice";
       console.log(s.data.recodePath);
       wx.uploadFile({
         url: urls,
@@ -114,11 +111,22 @@ Page({
     }, 1000)
 
   },
+  // 页面加载
   onLoad: function() {
-    var row = this.data.row2 - this.data.row3;
+    var list5 = [this.data.inmoney, this.data.cost, this.data.little];
+    var index5 = list5.indexOf(Math.max.apply(null, list5));
+    var max = Math.max.apply(null, list5 );
+    console.log(list5)   
+    console.log(max)
+    console.log(index5)
+    var unit = 380/max;
+    console.log(unit)
+  
     this.setData({
-      row1: row
+      row1: list5[0] * unit,
+      row2: list5[1] * unit,
+      row3: list5[2] * unit,
     })
-    console.log(this.data.row1)
+
   }
 })

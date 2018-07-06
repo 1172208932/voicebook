@@ -5,8 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    begin: true,
-    end: false,
+    showView: true,
+  },
+  totextpage:function(){
+    wx.navigateTo({
+      url: '../textPage/textPage',
+    })
   },
   toDay:function(){
     wx.navigateTo({
@@ -16,10 +20,10 @@ Page({
       complete: function(res) {},
     })
   },
+  // 录音开始
   voicebegin: function() {
     this.setData({
-      begin: false,
-      end: true
+      showView: false,  
     })
     var s = this;
     console.log("start");
@@ -39,12 +43,17 @@ Page({
       }
     });
   },
+  // 跳转首页
+  to_index:function(){
+    wx.reLaunch({
+      url: '../index/index',
+    })
+  },
 
 
   voiceend: function() { //结束录音 
     this.setData({
-      begin: true,
-      end: false
+      showView: true,  
     })
     var s = this;
     console.log("end");
